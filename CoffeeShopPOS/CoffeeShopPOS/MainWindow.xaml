@@ -1,0 +1,21 @@
+﻿<Window x:Class="CoffeeShopPOS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoffeeShopPOS"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Create Order" Click="CreateOrder" HorizontalAlignment="Left" Margin="82,40,0,0" VerticalAlignment="Top" Width="75"/>
+        <StackPanel HorizontalAlignment="Left" Height="100" Margin="82,115,0,0" VerticalAlignment="Top" Width="100">
+            <Label>Drinks</Label>
+            <Button Content="Coffee" Click="AddCoffee"/>
+            <Button Content="Tea" Click="AddTea"/>
+        </StackPanel>
+        <ListBox Name="orderListBox" HorizontalAlignment="Left" Height="100" Margin="317,139,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Review Order" Click="ReviewOrder" HorizontalAlignment="Left" Margin="323,109,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Save Order" Click="SaveOrder" HorizontalAlignment="Left" Margin="521,109,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
